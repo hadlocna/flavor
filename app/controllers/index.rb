@@ -7,11 +7,16 @@ get '/' do
 end
 
 get '/login' do
-  erb :index
+  erb :login
+end
+
+post '/login' do
+  # check user credentials
+  redirect '/'
 end
 
 get '/signup' do
-  erb :index
+  erb :signup
 end
 
 get '/logout' do
