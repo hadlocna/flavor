@@ -1,3 +1,6 @@
 class User < ActiveRecord::Base
-  mount_uploader :photo, PhotoUploader
+  has_many :tries
+  has_many :wants
+  has_many :likes
+  belongs_to :photo
 end
