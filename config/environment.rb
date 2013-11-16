@@ -14,12 +14,14 @@ require 'pathname'
 require 'pg'
 require 'active_record'
 require 'logger'
-require 'carrierwave'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'erb'
 require 'bcrypt'
+
+require 'carrierwave'
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
